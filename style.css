@@ -9,10 +9,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     gap: 5px;
 }
 .container{
+    margin-top: 100px;
     width: 400px;
     border-radius: 8px;
     padding: 20px;
@@ -22,8 +22,13 @@ body {
     color: #fff;
     box-shadow: 2px 5px 10px 5px #d6d3d3;
     background-color: rgba(60, 57, 57,0.7);
-    
 }
+@media(min-width:200px) and (max-width:400px) {
+    .container{
+        width: 350px;
+    }
+}
+
 main {
     flex-grow: 1;
     height: auto;
